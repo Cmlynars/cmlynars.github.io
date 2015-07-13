@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Moji Maker</title>
+
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="normalize.css">
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="icomoon/style.css">
+
+</head>
+
+<body>
+
+	<div id="pageContainer"> 
+
+		<div class="animation-placeholder"></div>
+
+		<h1>Moji Maker</h1>
+
+		<h2 id="tagline">Simply make and share text emoticons, dongers, and kaomojis</h2>
+
+		<button id="btnMake" onclick="toggleScreen()">Make</button>
+
+	</div>
+
+	<div id="keyboardContainer" class="hide">
+
+		<header class="clearfix">
+			<h3 id="title">Moji Maker</h3>
+			<p id="madeBy">Built and Designed by Chris Mlynarski</p>
+		</header>
+
+		<input type="text" id="inputField" placeholder="「(°ヘ°)">
+
+		<div id="buttonWrapper">
+			<button type="button" id="clear">Clear</button>
+			<button type="button" id="copy">Copy</button>
+		</div>
+
+		<ul>
+			<li boardname = "boardname1"><a href="#" class="active">Section 1</a></li>
+			<li boardname = "boardname2"><a href="#">Section 2</a></li>
+			<li boardname = "boardname3"><a href="#">Section 3</a></li>
+			<li boardname = "boardname4"><a href="#">Section 4</a></li>
+			<li boardname = "boardname5"><a href="#">Section 5</a></li>
+		</ul>
+
+	<div class="wrapper">
+		<button id="leftArrow" class="arrow" disabled="disabled"><span class="icon-angle-left"></span></button>
+
+		<section id="board" class="active-board">
+			<div class="keyboard"></div>
+		</section>
+
+		<button id="rightArrow" class="arrow"><span class="icon-angle-right"></span></button>
+	<div>
+
+		<button type="button" id="space">Space</button>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script type="text/javascript" src="scripts/boards/board.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+		
+	</body>
+
+	</html>
