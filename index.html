@@ -15,7 +15,7 @@
 
 	<div id="pageContainer"> 
 
-		<div class="animation-placeholder"></div>
+		<div class="animation-placeholder">＼(≧▽≦)／</div>
 
 		<h1>Moji Maker</h1>
 
@@ -28,41 +28,59 @@
 	<div id="keyboardContainer" class="hide">
 
 		<header class="clearfix">
-			<h3 id="title">Moji Maker</h3>
-			<p id="madeBy">Built and Designed by Chris Mlynarski</p>
+			<h3 class="title">Moji Maker</h3>
 		</header>
 
-		<input type="text" id="inputField" placeholder="「(°ヘ°)">
+		<input type="text" id="inputField" placeholder="「(°ヘ°)" onfocus="this.placeholder = ''" onblur="this.placeholder = ''">
 
 		<div id="buttonWrapper">
-			<button type="button" id="clear">Clear</button>
-			<button type="button" id="copy">Copy</button>
+			<div class="clearOverlayWrapper">
+				<div class="clearOverlay">Cleared!</div>
+				<button type="button" id="clear">Clear</button>
+			</div>
+			<button type="button" class="delete">Delete</button>
+			<div class="selectOverlayWrapper">
+				<div class="selectOverlay">⌘C or Ctrl+C</div>
+				<button type="button" id="select">Select</button>
+			</div>
+		</div>
+	
+	<div class="linkWrapper">
+		<ul>
+			<li boardname = "Common"><a href="#" class="active">Common</a></li>
+			<li boardname = "Shapes"><a href="#">Shapes</a></li>
+			<li boardname = "Symbols"><a href="#">Symbols</a></li>
+			<li boardname = "Languages"><a href="#">Languages</a></li>
+			<li boardname = "Misc"><a href="#">Miscellaneous</a></li>
+		</ul>
+	</div>
+		
+		<div class="bigWrapper">
+			
+			<button class="topButton leftArrow arrow icon-angle-left" disabled="disabled"></button>
+			<section id="board" class="active-board"><div class="keyboard"></div></section>
+			<button class="topButton rightArrow arrow icon-angle-right"></button>
+
+		</div>
+		
+		<div class="button-wrapper">
+
+			<button class="bottomButton leftArrow arrow icon-angle-left hide" disabled="disabled"></button>
+
+			<button type="button" id="space">Space</button>
+
+			<button class="bottomButton rightArrow arrow icon-angle-right hide"></button>
+			
 		</div>
 
-		<ul>
-			<li boardname = "boardname1"><a href="#" class="active">Section 1</a></li>
-			<li boardname = "boardname2"><a href="#">Section 2</a></li>
-			<li boardname = "boardname3"><a href="#">Section 3</a></li>
-			<li boardname = "boardname4"><a href="#">Section 4</a></li>
-			<li boardname = "boardname5"><a href="#">Section 5</a></li>
-		</ul>
+		<p class="made-by">Built and Designed by<a href="http://www.chrismlynarski.com" target="_blank">Chris Mlynarski</a></p>
 
-	<div class="wrapper">
-		<button id="leftArrow" class="arrow" disabled="disabled"><span class="icon-angle-left"></span></button>
+	</div>
 
-		<section id="board" class="active-board">
-			<div class="keyboard"></div>
-		</section>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="board.js"></script>
+	<script type="text/javascript" src="main.js"></script>
 
-		<button id="rightArrow" class="arrow"><span class="icon-angle-right"></span></button>
-	<div>
+</body>
 
-		<button type="button" id="space">Space</button>
-
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<script type="text/javascript" src="scripts/boards/board.js"></script>
-		<script type="text/javascript" src="main.js"></script>
-		
-	</body>
-
-	</html>
+</html>
