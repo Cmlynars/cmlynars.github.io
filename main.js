@@ -38,7 +38,7 @@ $('.title').on('click', function () {
 			scrollTop: targetOffset
 		}, 600);
 
-		$('#keyboardContainer').fadeOut(1000);
+		$('#keyboardContainer').fadeOut(800);
 	}
 
 	setTimeout(scrollUp, 1);

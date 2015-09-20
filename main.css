@@ -247,7 +247,6 @@ li {
 }
 
 .rightArrow, .leftArrow {
-	/*transform: translateY(-65%);*/
   display: inline-block;
   height: 100%;
  
@@ -262,7 +261,6 @@ li {
 }
 
 .icon-angle-right, .icon-angle-left {
-    /*font-size: 80px;*/
     font-size: 5rem;
     color: #ff6666;
     transition: all 100ms ease-in-out;
@@ -272,37 +270,24 @@ li {
 	text-shadow: 0px 2px 3px #C8C8C8;
 }
 
-.icon-angle-right {
+.icon-angle-right:before {
     content: "\e601";
   
 }
 
-.icon-angle-left {
+.icon-angle-left:before {
     content: "\e600";
 }
-
-/*.arrow[disabled] span {
-	color: #EBEBEB;
-}*/
 
 .arrow[disabled] {
 	color: #EBEBEB;
 	text-shadow: unset;
 }
 
-/*.arrow[disabled] span:hover {
-	text-shadow: unset;
-}*/
-
-/*.arrow[disabled] {
-	text-shadow: unset;
-}*/
-
 .active-board {
 	display: inline-block;
 	width: 960px;
 	position: relative;
-
 	height: 270px;
 }
 
@@ -342,10 +327,6 @@ li {
 	transition: all 100ms ease-in-out;
 }
 
-/*.delete:hover {
-	box-shadow: 0px 2px 5px #C8C8C8;
-}*/
-
 .bottomButton {
 	border: 1px solid #ff6666;
 	padding: 4px 20px;
@@ -365,24 +346,15 @@ text-shadow: 0px 2px 3px #C8C8C8;
 	transition: all 100ms ease-in-out;
 }
 
-/*#space:hover {
-	box-shadow: 0px 2px 5px #C8C8C8;
-}*/
-
 .made-by {
 	font-weight: 300;
-	/*font-size: 12px;*/
 	font-size: 0.75rem;
 	margin: 12px 25px 0px 0px;
 	text-align: center;
 	float: right;
-	/*position: absolute;
-	bottom: 3px;
-	right: 3px;*/
 }
 
 .made-by a {
-	/*font-size: 18px;*/
 	font-size: 1.125rem;
 	transition: all 100ms ease-in-out;
 }

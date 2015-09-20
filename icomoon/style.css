@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icomoon';
 	src:url('fonts/icomoon.eot?75ty0e');
-	src:url('fonts/icomoon.eot?#iefix75ty0e') format('embedded-opentype'),
+	src:url('fonts/icomoon.eot75ty0e') format('embedded-opentype'),
 		url('fonts/icomoon.ttf?75ty0e') format('truetype'),
 		url('fonts/icomoon.woff?75ty0e') format('woff'),
-		url('fonts/icomoon.svg?75ty0e#icomoon') format('svg');
+		url('fonts/icomoon.svg?75ty0e#') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -29,3 +29,6 @@
 .icon-angle-left:before {
 	content: "\e601";
 }
+
+/*src:url('fonts/icomoon.eot?#iefix75ty0e') format('embedded-opentype'),*/
+/*url('fonts/icomoon.svg?75ty0e#icomoon') format('svg');*/
