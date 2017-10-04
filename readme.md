@@ -1,3 +1,3 @@
 # MojiMaker
 
-This was my first web project. I like to keep it to look back at and cringe. 
+This was my first web project. I like to look back at it and cringe. 
